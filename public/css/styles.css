@@ -1,0 +1,76 @@
+h1 {
+    margin-bottom: 15px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+.navbar-default{
+    background-color: #99FFCC;
+    margin-bottom: 20px;
+}
+.navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+a.spacing {
+    margin-right: 20px;
+}
+
+.inline {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.post {
+    background-color: #ebe9e9;
+    border-radius: 10px;
+    padding: 0 10px 10px 10px;
+    margin-bottom: 10px;
+}
+
+.post:hover{
+    background-color: rgb(202, 247, 247);
+}
+
+.post:hover .update-button {
+    display: inline;
+}
+
+.post:hover .delete-button {
+    display: inline;
+}
+
+.update-button {
+    position: absolute;
+    right: 90px;
+    border-radius: 10px;
+    display: none;
+}
+
+
+.delete-button {
+    position: absolute;
+    right: 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+
+.update-button:hover, .delete-button:hover{
+    bottom: 5px;
+    border-width: 4px;
+    border-color:blue;
+}
+

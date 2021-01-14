@@ -1,0 +1,21 @@
+<!-- Show all the posts -->
+
+<%-include("partials/header")-%>
+    <% posts.forEach(element => { %>
+        <div class="post">
+            <div class="inline">
+                <h1><%= element.title %></h1>
+                <form method="GET" action="/posts/update/<%=element._id%>">
+                    <button class="update-button" type="submit">Update</button>
+                </form>  
+                <form method="POST" action="/posts/delete/<%=element._id%>">
+                    <button class="delete-button" type="submit">Delete</button>
+                </form> 
+            </div>
+            <p><%= element.body.substring(0,100) + "..." %>     
+                <a href="/posts/<%=element._id%>">Read More</a> 
+            </p>
+        </div>
+    <%}) %>
+    
+<%-include("partials/footer")-%>
